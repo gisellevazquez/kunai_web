@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunai Shop</title>
+    <link rel="stylesheet" href="..\css\Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    <header class="menu1"> 
+        
+        <nav class="navigation"> 
+            <a href="..\index.html">
+                <img src="..\images\Header\Kunailogo.svg" alt="Kunai Logo">
+            </a>
+
+            <div class="navigation__menu">
+                <ul class="navigation__menu">
+                <li><a href="New_in.html">New In</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Sale.html">Sale</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+              <button class="switch" id="switch"> Dark </button>
+            </div>
+
+
+            <div class="navigation__icons">
+                <a href="..\pages\404.html"><span class="material-icons-outlined md-48" id="icons">
+                    shopping_bag
+                </span></a>
+                <a href="..\pages\404.html"><span class="material-icons-outlined md-48" id="icons">
+                    person_outline
+            </span></a>
+        
+        </div>
+    
+        </nav>
+ </header>
+<main>
+    <div class="breadcrumb"> 
+        <p >Contact</p>
+        <h1>Contact</h1>
+    </div>
+    <div class="contactgrid">
+        <div class="contactgrid__blackblock" id="writeus">
+            <div class="rectangle" id="rectangle1"></div>
+            <p class="bigletter" id="write">Write</p>
+            <p class="bigletter" id="us">Us</p>
+        </div>
+
+    
+        <div class="contactForm" id="contactform">
+               
+                <form method="POST" enctype="application/x-www-form-urlencoded">
+                    <div>
+                        <label for="name_surname">Your Name* <br><div id="spanishTr">Tu Nombre</div> </label>
+                    <input class= "inputs" type="text" name="name_surname" required>
+                     </div>
+        
+                    <div> 
+                        <label for="phone">Your Phone* <br><div id="spanishTr">Tu teléfono</div> </label>
+                        <input class= "inputs" type="tel" 
+                        name="phone" 
+                        placeholder="(Prefix) Number"  
+                        pattern="[0-9]{11}"
+                        title="Enter a valid number Ex. 01195955555 it must have 11 numbers">
+                    </div>
+                    <div>
+                        <label for="email">Your E-mail* <br><div id="spanishTr">Tu Correo</div> </label>
+                    <input class= "inputs" type="email" name="email" required>
+                        
+                    </div>
+                    <br>
+                    <div>
+                        <label for="messenger">Messenger</label>
+                    
+                        <select name="messenger" required>
+                            <option value="Client">Client</option>
+                            <option value="Not yet a client">Not yet a client</option>
+                            <option value="Press">Press</option>
+                        </select>
+                    
+                    <div>
+                        <br>
+                        <label for="textarea"> Your Message* <br><div id="spanishTr">Tu mensaje</div></label>
+                      <textarea wrap="hard" rows="10" cols="50" placeholder="Write us here...">  </textarea>
+                      <br>
+                      <label for="checkbox" class="containerChkBox">
+                        <input type="checkbox" value="Accept" name="accept">
+                        I'm not a robot and i have read the message i'm sending
+                      </label>
+                      
+                       </div>
+                        <br>
+                        <input type="reset" value="Clean" class="cleanButton">
+                        <input type="submit" value="Send" class="sendButton"/>
+                    </div>
+    
+                </form>
+    
+        </div>
+        
+    <div class="contactgrid__blackblock" id="scanchat">
+            <div class="rectangle" id="rectangle2"></div>
+            <p class="bigletter" id="scan">Scan </p>
+            <p class="bigletter" id="ei">& </p>
+            <p class="bigletter"id="chat">Chat</p>
+                        
+    </div>
+    <div id="scanimg"><img  src="..\images\Contact\qr-code.svg" 
+        alt="Qr code for scanning and open WhatsApp" height="150 px" width="150 px"></div>
+        
+
+    
+    </div>
+</main>
+
+<footer class="foot">
+    <img src="..\images\Header\Kunailogo.svg" alt="Kunai Logo" width="300" height="150">
+    
+    
+    <div class="foot__text">
+        <h3>Ayuda</h3>
+        <ul>
+            <li>Tu Orden</li>
+            <li>Envios</li>
+            <li>Devoluciones y cambios</li>
+            <li>Preguntas Frecuentes</li>
+        </ul>
+
+    </div>
+   
+    
+    <div class="foot__text">
+        <h3>Extras</h3>
+        <ul>
+            <li>Comunidad</li>
+            <li>Kunai-TV</li>
+            <li>Trabaja con Nosotros</li>
+        </ul>
+    </div>
+
+
+    
+
+    <div class="foot__text">
+        <h3>Nuestra Página</h3>
+        <ul>
+            <li>Cookies</li>
+            <li>Legal</li>
+            <li>Políticas de Privacidad</li>
+        </ul>
+
+    </div>
+    
+
+    
+    <div class="foot__text">
+        <h3>Contactanos</h3>
+        <ul>
+            <li>
+                <a href="https://www.gmail.com">E-mail</a>
+            </li>
+            <li>
+                <a href="https://web.telegram.org/">Telegram</a>
+            </li>
+        </ul>
+
+    </div>
+    
+    
+    <div class="foot__text">
+        <h3>Seguinos</h3>
+        <img src="..\images\Footer\instagram.svg" alt="" width="30" height="30">
+        <img src="..\images\Footer\twitter.svg" alt=""  width="30" height="30">
+    
+
+    </div>
+
+</footer>
+<script src="..\Js\main.js"></script>
+
+</body>
+
+</html>
