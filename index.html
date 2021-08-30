@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap-5.1.0-dist\css\bootstrap.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -15,41 +17,110 @@
 <body>
     <header class="menu1"> 
         
-            <nav class="navigation"> 
+            <nav class="navigation navbar navbar-expand-md navbar-light" > 
+
                 <a href="index.html">
-                    <img src="images\Header\Kunailogo.svg" alt="Kunai Logo">
+                    <img class="navbar-brand" src="images\Header\Kunailogo.svg" alt="Kunai Logo">
                 </a>
 
-                <div class="navigation__menu">
-                    <ul class="navigation__menu">
-                    <li><a href="pages\New_in.html">New In</a></li>
+                                                        
+                </div>
+                <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse"data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarNav"></div>
+
+                 <div class="navigation__menu collapse navbar-collapse" id="navbarNav">
+                    <ul class="navigation__menu navbar-nav">
+                    <li class="nav-item"><a href="pages\New_in.html">New In</a></li>
                     <li><a href="pages\Shop.html">Shop</a></li>
                     <li><a href="pages\Sale.html">Sale</a></li>
                     <li><a href="pages\About.html">About</a></li>
                     <li><a href="pages\contact.html">Contact</a></li>
+                    <li class="navigation__menu--mobileItem"><a href="">My Account</a></li>
+                    <li class="navigation__menu--mobileItem"><a href="">My Bag</a></li>
+                    <li><button class="switch" id="switch"> Dark </button></li>
+                    
                   </ul>
-                  <button class="switch" id="switch"> Dark </button>
+                  
+                  
                 </div>
+                
 
-                <div class="navigation__icons">
+                <div class="navigation__icons collapse navbar-collapse "  id="navbarNav">
                         <a href="pages\404.html"><span class="material-icons-outlined md-48" id="icons">
                             shopping_bag
                         </span></a>
                         <a href="pages\404.html"><span class="material-icons-outlined md-48" id="icons">
                             person_outline
                     </span></a>
-                        
-                
-                </div>
         
             </nav>
      </header>
 <main>
-    <div> 
-        <img class="banner" src="images\Home\Banner1.jpg" alt="">
-        <img src="ACA VA LA IMAGEN" alt="">
-        <img src="ACA VA LA IMAGEN" alt="">
-        <!-- carrusel de imagenes -->
+
+    <!--carrousel start-->
+
+    <div id="carouselExampleIndicators" class="carousel slide carouselDesktop" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images\Home\Banner1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images\Home\Banner1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images\Home\Banner1.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>    
+        <!-- carrusel de imagenes Desktop -->
+
+        <div id="carouselExampleIndicators" class="carousel slide carouselMobile" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images\Home\Banner1Mobile.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images\Home\Banner1Mobile.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images\Home\Banner1Mobile.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>    
+            <!-- carrusel de imagenes Mobile-->
+
     </div> 
     <div class="homesect">
         <span id="primary">
@@ -176,7 +247,92 @@
 
     </div>
 
+    <div class="container containerMobile accordion-flush">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Ayuda
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Tu Orden</li>
+                        <li>Envios</li>
+                        <li>Devoluciones y cambios</li>
+                        <li>Preguntas Frecuentes</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Extras
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Comunidad</li>
+                        <li>Kunai-TV</li>
+                        <li>Trabaja con Nosotros</li>
+                    </ul>
+                    
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Nuestra Página
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Cookies</li>
+                       <li>Legal</li>
+                        <li>Políticas de Privacidad</li>
+
+                    </ul>
+                    
+                </div>
+              </div>
+              
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="accordion-button collapsed" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" 
+                  aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                      Contactanos
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" 
+                class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body">
+                    <ul>
+                        <li>
+                            <a href="https://www.gmail.com">E-mail</a>
+                        </li>
+                        <li>
+                            <a href="https://web.telegram.org/">Telegram</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </div>
+          </div>
+
+    </div> <!--Container Accordion Close -->
+
+    
+
 </footer>
+<script src="bootstrap-5.1.0-dist\js\bootstrap.js"></script>
 <script src="Js\main.js"></script>
 
 </body>
