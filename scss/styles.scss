@@ -1,0 +1,313 @@
+//hola 
+@mixin sizes($height, $width){
+    height: $height;
+    width: $width;
+}
+
+//Breakpoints
+
+
+    $xs: 576px;
+    $sm: 768px;
+    $md: 992px;
+    $lg: 1200px;
+
+
+
+
+.community{
+
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 1.5rem;
+        grid-column-gap:  1rem;
+        margin:0 20px 20px 20px;
+        align-items: center;
+
+    
+    
+    .community_container--text {
+        margin: 0.5rem;        
+        overflow: hidden; 
+        white-space: nowrap;
+
+        
+    }
+    
+    h1{
+         display: inline-block;
+         align-items: center;
+         overflow: hidden; 
+         white-space: nowrap;
+         text-overflow: ellipsis !important;
+
+    } 
+    p{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .community_container--image{
+        @include sizes(auto,auto );
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+
+    .community_container--image img{
+            @include sizes(400px,400px );
+            object-fit: cover
+             }
+
+    }
+    
+    .faces{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1.5rem;
+    grid-column-gap:  1rem;
+    margin: 20px;
+    align-items: center;
+    margin: 150px;
+
+
+    }
+
+    .faces_eyeL {
+        grid-column-start: 2; 
+         @include sizes(auto,auto )
+    }
+
+    .faces__nothing{
+        @include sizes(autopx,autopx )
+    }
+
+     
+    .faces_eyeR {
+        grid-column-start: 4;
+        @include sizes(auto,auto )
+    }
+
+    .faces_mouth {
+        
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        
+img{
+    @include sizes(auto,auto);
+
+}
+
+    }
+
+.commutiny_container{
+    display: flex;
+    margin: 20px;
+    align-content: center;
+    flex-direction: column;
+   
+}
+
+
+
+
+//variables
+$ancho: 10% ;
+$alto: 300px ;
+$colorN: black;
+$animate: .5s infinite ease-out;
+$duration: 0.5s;
+$displaysize: 576px;
+
+.musicbox{
+    display: flex;
+    transform: rotate(180deg);
+    
+ 
+    @if $displaysize < $lg {
+        height: $alto+100px;
+        width: auto;
+        margin: auto;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+}
+
+#barone{
+    width: $ancho;
+    height: $alto;
+    background-color: $colorN;
+    animation: one $animate;
+    animation-duration: $duration;
+    margin: 5px;
+
+}
+
+
+@keyframes one {
+    50%{
+        height: $alto/2;
+    }
+    100%{
+        height: $alto;
+    }
+}
+#bartwo{
+    width: $ancho;
+    height: $alto;
+    background-color: $colorN;
+    animation: two $animate;
+    animation-duration: $duration;
+    margin: 5px;
+    @if $displaysize == $lg {
+        display: inline-block;
+    }
+}
+@keyframes two {
+    50%{
+        height: $alto/3;
+    }
+    100%{
+        height: $alto*0.5;
+    }
+}
+#barthree{
+    width: $ancho;
+    height: $alto;
+    background-color: $colorN;
+    animation: three $animate;
+    animation-duration: $duration;
+    margin: 5px;
+
+}
+
+@keyframes three {
+    50%{
+        height: $alto/4;
+    }
+    100%{
+        height: $alto*0.5;
+    }
+}
+#barfour{
+    width: $ancho;
+    height: $alto;
+    background-color: $colorN;
+    animation: four $animate;
+    animation-duration: $duration;
+    margin: 5px;
+}
+@keyframes four {
+    50%{
+        height: $alto/1.2;
+    }
+    100%{
+        height: $alto*1.2;
+    }
+}
+#barfive{
+    width: $ancho;
+    height: $alto;
+    background-color: $colorN;
+    animation: five $animate;
+    animation-duration: $duration;
+    margin: 5px;
+}
+@keyframes five {
+    50%{
+        height: $alto/2;
+    }
+    100%{
+        height: $alto;
+    }
+}
+#barsix{
+    width: $ancho;
+    height: $alto;
+    background-color: $colorN;
+    animation: six $animate;
+    animation-duration: $duration;
+    margin: 5px;
+}
+@keyframes six {
+    50%{
+        height: $alto/1.5;
+    }
+    100%{
+        height: $alto;
+    }
+}
+
+#barseven{
+    width: $ancho;
+    height: $alto;
+    background-color: $colorN;
+    animation: seven $animate;
+    animation-duration: $duration;
+    margin: 5px;
+}
+@keyframes seven {
+    50%{
+        height: $alto/2 ;
+    }
+    100%{
+        height: $alto;
+    }
+}
+#bareight{
+    width: $ancho;
+    height: $alto;
+    background-color: $colorN;
+    animation: eight $animate;
+    animation-duration: $duration;
+    margin: 5px;
+}
+@keyframes eight {
+    50%{
+        height: $alto/1.2;
+    }
+    100%{
+        height: $alto;
+    }
+}
+#barnine{
+    width: $ancho;
+    height: $alto;
+    background-color: $colorN;
+    animation: nine $animate;
+    animation-duration: $duration;
+    margin: 5px;
+}
+@keyframes nine {
+    50%{
+        height: $alto/1.1;
+    }
+    100%{
+        height: $alto;
+    }
+}
+#barten{
+    width: $ancho;
+    height: $alto;
+    background-color: $colorN;
+    animation: ten $animate;
+    animation-duration: $duration;
+    margin: 5px;
+
+}
+
+@keyframes ten {
+    50%{
+        height: $alto/1.5;
+    }
+    100%{
+        height: $alto;
+    }
+}
