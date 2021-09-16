@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+   content="Kunai - Streetstyle Argentina">
+   <meta name="keywords"
+   content="Streetstyle, tienda online, store, ropa importada, Tech fashion">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kunai Shop</title>
     <link rel="stylesheet" href="..\css\Style.css">
@@ -50,9 +54,9 @@
             <li><a href="..\pages\Shop.html">Shop</a></li>
             <li><a href="..\pages\Sale.html">Sale</a></li>
             <li><a href="..\pages\About.html">About</a></li>
-            <li><a href="..\pages\contact.html">Contact</a></li>
-            <li class="navigation__menu--mobileItem"><a href="">My Account</a></li>
-            <li class="navigation__menu--mobileItem"><a href="">My Bag</a></li>
+            <li><a href="..\pages\Contact.html">Contact</a></li>
+            <li class="navigation__menu--mobileItem"><a href="..\pages\404.html">My Account</a></li>
+            <li class="navigation__menu--mobileItem"><a href="..\pages\404.html">My Bag</a></li>
             <li><button class="switch" id="switch"> Dark </button></li>
             
           </ul>
@@ -76,11 +80,11 @@
          <div class="gridItem"> 
              <div  class="gridItem__productItem">
                 <div class="gridItem__productItem--smallimg">
-                    <img src="..\images\Sale\Project Social T Skateboard Skeletons Graphic Sweatshirt.jpg">
-                    <img src="..\images\Sale\Project Social T Skateboard Skeletons Graphic Sweatshirt2.jpg">
+                    <img src="..\images\Sale\Project Social T Skateboard Skeletons Graphic Sweatshirt.jpg" alt="Skeletons Graphic Sweatshirt miniatura">
+                    <img src="..\images\Sale\Project Social T Skateboard Skeletons Graphic Sweatshirt2.jpg"alt="Skeletons Graphic Sweatshirt miniatura">
                 </div>
                 <div id="imageBox" class="gridItem__productItem--imgcontainer">
-                            <img src="..\images\Sale\Project Social T Skateboard Skeletons Graphic Sweatshirt.jpg"></div>
+                            <img src="..\images\Sale\Project Social T Skateboard Skeletons Graphic Sweatshirt.jpg" alt="Skeletons Graphic Sweatshirt"></div>
 
              </div>
                     
@@ -109,26 +113,26 @@
 
                  </span>
                  <!--Ejemplos css https://codepen.io/wildbeard/pen/eZZPZr-->
-                 <span>
+                 <span class="gridItem__gridinfo--size">
                      <p>Size*</p>
                      <ul>
-                         <li>Small</li>
-                         <label for="small"></label>
-                         <input type="radio" name="size" id="small" value="small"/>
-                         <li>Medium</li>
-                         <label for="medium"></label>
-                         <input type="radio" name="size" id="medium" value="medium"/>
-                         <li>Large</li>
-                         <label for="large"></label>
-                         <input type="radio" name="size" id="large" value="large"/>
+                         <li>Small <label for="small"></label>
+                            <input type="radio" name="size" id="small" value="small"/></li>
+                         
+                         <li>Medium <label for="medium"></label>
+                            <input type="radio" name="size" id="medium" value="medium"/></li>
+                         
+                         <li>Large <label for="large"></label>
+                            <input type="radio" name="size" id="large" value="large"/></li>
+                         
                      </ul>
                  </span>
-                 <span>
+                 <span class="gridItem__gridinfo--qty">
                      <label for="Qty">Qty*</label>
                      <input type="number" id="Qty" name="Quantity" min="1" max="20">
         
                  </span>
-                 <div>
+                 <div class="gridItem__gridinfo--add">
                      <Button type="submit">Add to Bag</Button>
                  </div>
         
@@ -156,7 +160,9 @@
         <div class="foot__text">
             <h3>Extras</h3>
             <ul>
-                <li>Comunidad</li>
+                <li>
+                    <a href="..\pages\comunidad.html"> Comunidad </a>
+                  </li>
                 <li>Kunai-TV</li>
                 <li>Trabaja con Nosotros</li>
             </ul>
@@ -227,7 +233,9 @@
                   <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                     <div class="accordion-body">
                         <ul>
-                            <li>Comunidad</li>
+                            <li>
+                                <a href="..\pages\comunidad.html"> Comunidad </a>
+                              </li>
                             <li>Kunai-TV</li>
                             <li>Trabaja con Nosotros</li>
                         </ul>
