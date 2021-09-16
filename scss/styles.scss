@@ -531,6 +531,7 @@ h5 {
 	justify-content: end;
 	padding: 2px;
 	padding-left: 50px;
+	margin: 5px 0 5px 0;
 }
 .price_old {
 	font-family: 'Open Sans', sans-serif;
@@ -582,6 +583,10 @@ ul {
 		font-size: 13px;
 		text-align: left;
 		line-height: 18px;
+	}
+	h1{
+		text-align: center;
+		margin: auto;
 	}
 }
 .tds {
@@ -1259,6 +1264,21 @@ ol {
 	}
 }
 
+.paginationNav{
+	display: flex;
+	
+	ul{
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin: auto auto 20px auto;
+	}
+	a{
+		&:hover{
+			color: #414141;
+		}
+	}
+}
 
 //
 
