@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,7 +83,7 @@
                
                 <form method="POST" enctype="application/x-www-form-urlencoded">
                     <div>
-                        <label for="name_surname">Your Name* <br><div id="spanishTr">Tu Nombre</div> </label>
+                    <label for="name_surname">Your Name* <br><div id="spanishTr">Tu Nombre</div> </label>
                     <input class= "inputs" type="text" name="name_surname" required>
                      </div>
         
@@ -90,7 +91,7 @@
                         <label for="phone">Your Phone* <br><div id="spanishTr">Tu teléfono</div> </label>
                         <input class= "inputs" type="tel" 
                         name="phone" 
-                        placeholder="(Prefix) Number"  
+                        placeholder="(Prefix) Number Ex. 01195955555"  
                         pattern="[0-9]{11}"
                         title="Enter a valid number Ex. 01195955555 it must have 11 numbers">
                     </div>
@@ -101,29 +102,32 @@
                     </div>
                     <br>
                     <div>
-                        <label for="messenger">Messenger</label>
+                        <label for="messenger">Messenger</label> <br>
                     
                         <select name="messenger" required>
                             <option value="Client">Client</option>
                             <option value="Not yet a client">Not yet a client</option>
                             <option value="Press">Press</option>
                         </select>
-                    
+                    </div>
                     <div>
                         <br>
                         <label for="textarea"> Your Message* <br><div id="spanishTr">Tu mensaje</div></label>
                       <textarea wrap="hard" rows="10" cols="50" placeholder="Write us here...">  </textarea>
                       <br>
                       <label for="checkbox" class="containerChkBox">
-                        <input type="checkbox" value="Accept" name="accept">
+                        <input type="checkbox" value="Accept" name="accept" id="inputText">
                         I'm not a robot and i have read the message i'm sending
                       </label>
                       
-                       </div>
-                        <br>
-                        <input type="reset" value="Clean" class="cleanButton">
-                        <input type="submit" value="Send" class="sendButton"/>
                     </div>
+                        <br>
+                        <div class="contactForm__centerbuttons">
+                            <input type="reset" value="Clean" class="cleanButton">
+                              <input type="submit" value="Send" class="sendButton"/>
+
+                        </div>
+                        
     
                 </form>
     

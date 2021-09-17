@@ -188,6 +188,7 @@
 		grid-template-rows: 1fr 0.31fr 0.1fr;
 		grid-template-columns: 100%;
 		grid-template-areas: "writeus" "contactform";
+		margin: 10px;
 	}
 	#writeus {
 		grid-area: "writeus";
@@ -202,6 +203,7 @@
 		grid-column-end: 2;
 		grid-row-start: 1;
 		grid-row-end: 2;
+		display: flex;
 	}
 	#scanchat {
 		display: none;
@@ -351,6 +353,25 @@
 	column-gap: 0;
 	margin: 0;
 }
+.contactForm .cleanButton input{
+	display: inherit;
+	margin: auto;
+	text-align: center;
+	}
+
+.sendButton {
+		
+	text-align: center;
+	width: 150px;
+    margin: 20px;
+	
+}
+.contactForm__centerbuttons{
+	display: flex;
+	margin: auto;
+	align-self:center;
+}
+
 }
 /*Mobile ends*/
 

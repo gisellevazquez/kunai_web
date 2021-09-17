@@ -766,7 +766,12 @@ button {
 	font-size: 13px;
 	line-height: 18px;
 	padding: 50 px;
-	margin: 0 100px 0px 100px;
+	margin: 0 10px 0px 10px;
+	width: 70%;	
+	z-index:1 ;
+	input{
+		user-select: text;
+	}
 }
 #spanishTr {
 	font-family: 'Open Sans', sans-serif;
@@ -781,6 +786,7 @@ button {
 	font-family: 'Roboto Mono', monospace;
 	padding: 10px 24px;
 	width: 150px;
+	
 	&:hover {
 		background-color: rgb(0, 0, 0);
 		color: rgb(255, 255, 255);
@@ -793,9 +799,9 @@ button {
 	font-family: 'Roboto Mono', monospace;
 	padding: 10px 24px;
 	border: 2px solid #dfdfdf;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin: 20px;
 	width: 100px;
+
 	&:hover {
 		background-color: rgb(255, 255, 255);
 		color: rgb(255, 0, 0);
@@ -810,7 +816,7 @@ button {
 	border: none;
 	border-bottom: 2px solid rgb(0, 0, 0);
 	background-color: #ebebeb;
-	width: 100%;
+	width: 85%;
 	padding: 12px 20px;
 	margin: 8px 0;
 	box-sizing: content-box;
@@ -827,7 +833,7 @@ input[type=tel] {
 }
 textarea {
 	resize: none;
-	width: 100%;
+	width: 85%;
 	height: 150px;
 	padding: 12px 20px;
 	box-sizing: content-box;
@@ -836,7 +842,7 @@ textarea {
 	background-color: #ebebeb;
 }
 select {
-	width: 100%;
+	width: 95%;
 	padding: 16px 20px;
 	border: none;
 	border-radius: 4px;
@@ -844,22 +850,25 @@ select {
 	font-family: 'Open Sans', sans-serif;
 }
 .containerChkBox {
-	padding-left: 35px;
-	margin-bottom: 12px;
+	
+	margin: auto auto 12px auto;
 	cursor: pointer;
 	font-size: 13px;
 	display: flex;
 	align-items: center;
+	#inputText{
+		margin:20px;
+	}
 }
 input[type="checkbox"] {
 	appearance: none;
 	-webkit-appearance: none;
 	height: 20px;
-	width: 20px;
+	width: 30px;
 	background-color: #ebebeb;
 	border: 2px;
 	border-color: black;
-	&:checked {
+		&:checked {
 		background-color: #000000;
 		display: flex;
 		align-items: center;
